@@ -1,0 +1,16 @@
+amqp==2.3.2
+billiard==3.5.0.4
+boto3==1.7.68
+botocore==1.10.68
+celery==4.2.1
+docutils==0.14
+enum==0.4.6
+futures==3.2.0
+jmespath==0.9.3
+kombu==4.2.1
+pycurl==7.43.0.2
+python-dateutil==2.7.3
+pytz==2018.5
+s3transfer==0.1.13
+six==1.11.0
+vine==1.1.4

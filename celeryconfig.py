@@ -1,0 +1,16 @@
+import os
+BROKER_BACKEND = "SQS"
+AWS_ACCESS_KEY_ID = 'XXXXXXXXXXXXXXX'
+AWS_SECRET_ACCESS_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+AWS_BUCKET_NAME = 'test'
+AWS_REGION = "us-east-1"
+os.environ.setdefault("AWS_ACCESS_KEY_ID", AWS_ACCESS_KEY_ID)
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", AWS_SECRET_ACCESS_KEY)
+os.environ.setdefault("AWS_BUCKET_NAME", AWS_BUCKET_NAME)
+os.environ.setdefault("AWS_REGION", AWS_REGION)
+BROKER_URL = 'sqs://'
+
+BROKER_TRANSPORT_OPTIONS = {'region': AWS_REGION}
+BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3600} 
+BROKER_TRANSPORT_OPTIONS = {'polling_interval': 0.5}
+BROKER_TRANSPORT_OPTIONS = {'queue_name_prefix': 'dev-'}
